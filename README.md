@@ -51,3 +51,6 @@ Query Parameters:
 
 city – (required) Name of a city in Lithuania (e.g. vilnius, kaunas, klaipeda)
 
+##  API Endpoint
+
+    heroku link: http://weatherappadeoweb-0a76448e10fb.herokuapp.com/api/products/recommended?city={city}

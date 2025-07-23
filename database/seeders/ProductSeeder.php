@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 
 use Illuminate\Database\Seeder;
-use App\Models\Product;
+use App\Models\Products;
 
 class ProductSeeder extends Seeder
 {
@@ -130,7 +130,7 @@ class ProductSeeder extends Seeder
         ];
 
         foreach ($products as [$name, $condition]) {
-            Product::create([
+            Products::create([
                 'name' => $name,
                 'condition_code' => $condition
             ]);

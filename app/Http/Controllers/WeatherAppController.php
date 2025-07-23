@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Cache;
-use App\Models\Product;
+use App\Models\Products;
 use Carbon\Carbon;
 
 class WeatherAppController extends Controller
@@ -45,7 +45,7 @@ function WeatherFunction(Request $request)
             $condition = $items->first()['conditionCode'];
 
 
-            $products = Product::where('condition_code', $condition)
+            $products = Products::where('condition_code', $condition)
                 ->inRandomOrder()
                 ->limit(2)
                 ->pluck('name');

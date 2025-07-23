@@ -17,6 +17,7 @@ return new class extends Migration
         $table->string('condition_code'); // e.g. 'clear', 'rain'
         $table->timestamps();
     });
+
     }
 
     /**
